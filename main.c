@@ -7,6 +7,6 @@
 int main(int argc, char **argv)
 {
 	char choice = getEncChoice();
-	(choice == 'd') ? printf("d") : printf("e");
+	(choice == 'd') ? printf("d\n") : printf("e\n");
 	return 0;
 }
