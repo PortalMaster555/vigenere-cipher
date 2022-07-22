@@ -1,9 +1,12 @@
 #include <stdio.h>
+#include <ctype.h>
+#include <stdlib.h>
 
 #include "vigilib.h"
 
 int main(int argc, char **argv)
 {
-	printHelloWorld();
+	char choice = getEncChoice();
+	(choice == 'd') ? printf("d") : printf("e");
 	return 0;
 }

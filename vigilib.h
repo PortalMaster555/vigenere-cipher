@@ -1,1 +1,4 @@
-void printHelloWorld(void);
+
+
+
+char getEncChoice(void);
