@@ -6,7 +6,14 @@
 
 int main(int argc, char **argv)
 {
-	char choice = getEncChoice();
-	(choice == 'd') ? printf("d\n") : printf("e\n");
+	char choice;
+
+	int isFlagDriven = checkFlags(argc, argv);
+
+	if(!isFlagDriven) //if flag is present/valid
+	{
+		choice = getEncChoice();
+		(choice == 'd') ? printf("Decoding input\n") : printf("Encoding input\n");
+	}
 	return 0;
 }

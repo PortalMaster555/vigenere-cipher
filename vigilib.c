@@ -3,6 +3,27 @@
 
 #include "vigilib.h"
 
+int checkFlags(int argc, char **argv)
+{
+	for(int i = 0; i < argc; i++)
+	{
+		if(argv[i][0] == '-')
+		{
+			if(argv[i][1] == 'd')
+			{
+				printf("D flag encountered\n");	
+				return 'd';
+			}
+			else if(argv[i][1] == 'e')
+			{
+				printf("E flag encountered\n");
+				return 'e';
+			}
+		}
+	}
+	return 0; //returns false if no (valid) flags are found
+}
+
 char getEncChoice(void)
 {
 	char choice;
