@@ -1,6 +1,6 @@
-# viginere-cipher
+# vigenere-cipher
 
-This is a program capable of encrypting and decrypting plain ASCII text according to the Viginere cipher rules.
+This is a program capable of encrypting and decrypting plain ASCII text according to the Vigenere cipher rules.
 
 x ABC...XYZ
 
