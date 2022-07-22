@@ -8,9 +8,9 @@ int main(int argc, char **argv)
 {
 	char choice;
 
-	int isFlagDriven = checkFlags(argc, argv);
+	int argFlag = checkFlags(argc, argv);
 
-	if(!isFlagDriven) //if flag is present/valid
+	if(!argFlag) //if flag is present/valid
 	{
 		choice = getEncChoice();
 		(choice == 'd') ? printf("Decoding input\n") : printf("Encoding input\n");
